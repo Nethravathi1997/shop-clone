@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    <style>
+      body{
+        background-image: url("https://wallpaperaccess.com/full/552846.jpg");
+        z-index: -1;
+      }
+      #form{
+        height: 100%;
+        width: 40%;
+        background-color: white;
+        padding-bottom: 30px;
+        margin-left: 32%;
+      }
+      #form h1,#form h3{
+        margin-left: 40px;
+      }
+      #box{
+        border: 1px solid rgb(0, 174, 255);
+        width: 140px;
+        height: 90px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 10px;
+      }
+      #opdiv{
+        display: flex;
+      }
+      #icon{
+        padding-top: 20px;
+      }
+
+      h3{
+        font-size: 25px;
+        margin-bottom: 0px;
+      }
+      select{
+        width: 80%;
+        margin-left: 10%;
+        height: 1.5cm;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+      #iput{
+        display: flex;
+        margin-top: 4%;
+        margin-left: 10%;
+      }
+      #iput img{
+        height: 1cm;
+        width: 1cm;
+        background-color: rgb(246,189,110);
+        padding: 0.45cm;
+        border: 1px solid black;
+      }
+      ::placeholder{
+        font-size: 20px;
+      }
+      #iput input{
+        border: 1px solid black;
+        height: 1.9cm;
+        margin-top: 0px;
+        border-left: none;
+        width: 78%;
+      }
+      #sear{
+        width: 400px;
+        margin-top: 25px;
+        border-radius: 8px;
+        background-color: rgb(239,239,239);
+        font-weight: 500;
+        font-size: 25px;
+        height: 1.5cm;
+      }
+      input{
+        font-size: 22px;
+      }
+      
+    </style>
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="body">
+      <div id="form">
+        <h1>SHOP . Travel</h1>
+        <div id="opdiv">
+          <div id="box" style="color:rgb(0, 174, 255);">
+            <i id="icon" class='fa fa-building' style='font-size:24px'></i>
+            <p>Hotels</p>
+          </div>
+          <div id="box">
+            <i id="icon" class='fa fa-rocket' style='font-size:24px'></i>
+            <p>Flights</p>
+          </div>
+          <div id="box">
+            <i id="icon" class='fa fa-car' style='font-size:24px'></i>
+            <p>Car</p>
+          </div>
+          <div id="box">
+            <i id="icon" class='fa fa-tree' style='font-size:24px'></i>
+            <p>Packages</p>
+          </div>
+        </div>
+        <div>
+            <h3>Pick a Travel Partner</h3>
+            <select name="" id="">
+              <option value="">Select</option>
+              <option value="one">Booking.com up to 2.0% Cashback</option>
+              <option value="">IHG Hotels & Resorts    up to 2.0% Cashback </option>
+              <option value="">Hotels.com    up to 2.0% Cashback </option>
+            </select>
+            <div id="iput">
+              <img src="https://img.shop.com/Image/resources/images/icon-travel-location.svg" alt="">
+              <input type="text" placeholder="City or Airport Code">
+            </div>
+
+            <div style="display: flex;">
+              <div id="iput" style="width: 39%;">
+                <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" alt="">
+                <input type="text" placeholder="Check in">
+              </div>
+              <div id="iput" style="margin-left: 10px;width: 39%;">
+                <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" alt="">
+                <input type="text" placeholder="Check out">
+              </div>
+            </div>
+
+            <div style="display: flex;">
+              <div id="iput" style="width: 39%;">
+                <img src="https://img.shop.com/Image/resources/images/icon-travel-human.svg" alt="">
+                <input type="number" placeholder="Number of Adults">
+              </div>
+              <div id="iput" style="margin-left: 10px;width: 39%;">
+                <img src="https://img.shop.com/Image/resources/images/humanoid_child.svg" alt="">
+                <input type="number" placeholder="Number of Children">
+              </div>
+            </div>
+
+            <div style="display: flex;">
+              <div id="iput" style="width: 60%;">
+                <img src="https://img.shop.com/Image/resources/images/icon-social-email.svg" alt="">
+                <input type="email" placeholder="Enter email..">
+              </div>
+              <div id="iput" style="margin-left: 10px;width: 39%;">
+                <p>Provide your email to earn <br> Cashback at Hotels.com</p>
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <button id="sear">Search Hotels.com</button>
+              <h2 style="color: orange;">Earn $5 Cashback in Free Cashback on your first order*</h2>
+              <a href="">I do not want cashback,Proceed to Hotels.com</a>
+            </div>
+            
+            
+        </div>
+      </div>
+
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>

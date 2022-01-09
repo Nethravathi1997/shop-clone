@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+
+    <style>
+      #sb{
+        width: 80%;
+        margin-left: 10%;
+      }
+      #h1{
+        font-weight: 300;
+        margin-left: 22%;
+      }
+      #flex{
+        display: flex;
+        margin-left: 20%;
+      }
+      #ques{
+        margin-left: 22%;
+        margin-top: 2%;
+      }
+      #flex div{
+        width: 25%;
+        margin-top: 5%;
+        margin: 2%;
+      }
+      #flex img{
+        width: 80%;
+        height: 80%;
+      }
+      #flex h2{
+        font-size: 20px;
+      }
+    </style>
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div>
+      <img id="sb" src="https://img.shop.com/Image/resources/images/shop-buddy-hero-new.jpg" alt="">
+      <img style="margin-left: 20%;" src="./images/bb.PNG" alt="">
+      <h1 id="h1"> <b>SAVING MONEY & EARNING CASHBACK</b> JUST GOT EASIER!</h1>
+      <div id="flex">
+        <div>
+          <img src="https://img.shop.com/Image/resources/images/shop-buddy-icon-download.svg" alt="">
+          <h2>SAVVY SHOPPERS DOWNLOAD <br> SHOPBUDDY</h2>
+        </div>
+        <div>
+          <img src="https://img.shop.com/Image/resources/images/shop-buddy-icon-online.svg" alt="">
+          <h2>SHOP ONLINE AT YOUR FAVORITE <br> MERCHANT'S SITE</h2>
+        </div>
+        <div>
+          <img src="https://img.shop.com/Image/resources/images/shop-buddy-icon-cashback-green.svg" alt="">
+          <h2>SAVE MONEY USING COUPONS & <br> EARN CASHBACK!</h2>
+        </div>
+      </div>
+
+      <div id="ques">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <p>*By installing or upgrading ShopBuddy you agree to the ShopBuddy license agreement.</p>
+        <p>ShopBuddy works on Edge, FireFox and Chrome browsers. ShopBuddy is not available on mobile or tablet devices (e.g. iPads, iPhones).</p>
+        <p>** Individual Cashback is rounded off to the nearest value and may vary depending on new and/or pending purchases credited to SHOP.COM account. See site <br>
+           for details.</p>
+           <p>Note: Offer and Cashback percentages are subject to change without notice by our Partner Stores.</p>
+      </div>
+      
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>

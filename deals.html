@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <style>
+      #below{
+        display: flex;
+      }
+      #left{
+        width: 15%;
+        border-right: 1px solid gray;
+      }
+      #left img{
+        width: 100%;
+      }
+      #right{
+        margin-left: 20px;
+        width: 80%;
+      }
+      #bh1{
+        font-size: 40px;
+        margin-top: 10px;
+      }
+      #bdiv{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(212, 211, 211);
+        padding-bottom: 20px;
+      }
+      #btn{
+        width: 350px;
+        height: 50px;
+        border: 2px solid rgb(65,68,103);
+        border-radius: 5px;
+        background-color: white;
+        color:rgb(65,68,103) ;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 100px;
+      }
+      #btn:hover{
+        background-color:rgb(31, 33, 51) ;
+        color: white;
+      }
+      #hrt:hover{
+         border: inset 5px red;
+      }
+      #bdiv h3{
+        text-decoration: underline;
+      }
+      #bdiv h3:hover{
+        color: rgb(0, 225, 255);
+      }
+      #msg{
+        margin-left: 200px;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    
+    <div>
+      <h1>Featured Hot Deals</h1>
+      <img style="width: 100%;" src="./images/d1.PNG" alt="">
+
+      <div id="below">
+        <div id="left">
+          <img src="./images/d2.PNG" alt="">
+          <img style="margin-left: 5%;width: 95%;" src="./images/d3.PNG" alt="">
+          <img  src="./images/az.PNG" alt="">
+
+        </div>
+        <div id="right">
+          <h1 id="bh1">Hot Deals</h1>
+          <hr>
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping on any Order of $125+.</h2>
+              <h3>A Pea In The Pod See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="bdiv">
+            <div>
+              <h2>Up to 50% off Original Prices.</h2>
+              <h3>A Pea In The Pod
+                See More from Merchant</h3>
+             <p>Expires:  11/26/2021</p>
+             
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="bdiv">
+            <div>
+              <h2>Extra 25% off Markdown and Clearance Designer Maternity and Nursing Styles.</h2>
+              <h3>A Pea In The Pod
+                See More from Merchant</h3>
+             <p>Expires:  11/26/2021</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping on Select Books.</h2>
+              <h3>Abebooks
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping to Australia.</h2>
+              <h3>Abebooks
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping to Canada..</h2>
+              <h3>Abebooks
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Up to $1800 off Miele Appliances.</h2>
+              <h3>Abebooks
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping with any Order.</h2>
+              <h3>Abt.com
+                See More from Merchant</h3>
+             <p>Expires:  12/30/2021</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Nurses, First Responders, Military, We Appreciate You - Save $50 on Orders $500+ and Free Shipping.</h2>
+              <h3>Abt.com
+                See More from Merchant</h3>
+             <p>Expires:  12/30/2021</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>10% off First order and All Future Orders Plus Free Shipping with Contact Subscription Service.</h2>
+              <h3>AC Lens
+                See More from Merchant</h3>
+             <p>Expires:  12/30/2021</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Save 10% with Auto-Reorder and Free Shipping.</h2>
+              <h3>AC Lens</h3>
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping on Prescription Sunglasses..</h2>
+              <h3>AC Lens
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Get Free Shipping on $25+ Order.</h2>
+              <h3>Academy Sports + Outdoors
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Get Up to $100 off Game Tables.</h2>
+              <h3>Academy Sports + Outdoors
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>30% off Women's Accessories.</h2>
+              <h3>Accompany
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+          <div id="bdiv">
+            <div>
+              <h2>Free Shipping in the US on orders over $150.</h2>
+              <h3>Accompany
+                See More from Merchant</h3>
+             <p>Expires:  ongoing</p>
+            </div>
+            <div>
+              <button id="btn">Get the Deal</button> <br> <br>
+              <i id="hrt" class="fa fa-heart-o" style="font-size:36px;color:red"></i>
+              <img id="msg" src="./images/msg.PNG" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div id="footer"></div>
+
+   
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/suggestions.js"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script src="./components/input.js"></script>
+<script src="./components/header.js" type="module"></script>
+
+            

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+    {
+      name: "Jesus,Texas and Tacos - Black top quality <br> Fashion Women's Top",
+      logo: "Sold by not justLeggings",
+      price: "20.00",
+      image:
+        "https://img.shop.com/Image/280000/288000/288080/products/1892927734.jpg?size=400x400",
+      mar: "+1.60 / 8% Cashback",
+    },
+    {
+      name: "Pam & Gela Womens Skinny Ribbed Knit Solid <br> Tank Top",
+      logo: "Sold by BHFO",
+      price: "20.99",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1899439041.jpg?size=400x400",
+      mar: "+0.42 / 2% Cashback",
+    },
+    {
+      name: "Grunt Style Realtree Fishing - Jig It, Jerk It, Crank It T-Shirt - Black",
+      logo: "Sold by Forza Sports",
+      price: "24.95",
+      image:
+        "https://img.shop.com/Image/240000/249300/249385/products/1865547869.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "I-N-C Womens Lace-Up Knit Blouse <br><br>",
+      logo: "Sold by Tags Weekly",
+      price: "46.63 ",
+      image:
+        "https://img.shop.com/Image/250000/253200/253251/products/1749539641.jpg?size=400x400",
+      mar: "+up to $0.93 / 2% Cashback",
+    },
+    {
+      name: "RALPH LAUREN Womens Burgundy Boyfriend <br> Shorts",
+      logo: "Sold by BOBBI + BRICKA",
+      price: "49.98 ",
+      image:
+        "https://img.shop.com/Image/270000/278100/278132/products/1893332391.jpg?size=400x400",
+      mar: "+$1.50 / 3% Cashback",
+    },
+    {
+      name: "ALFANI Womens Brown Patterned Below The Knee Knife Pleated Skirt",
+      logo: "Sold by BOBBI + BRICKA",
+      price: "29.98",
+      image:
+        "https://img.shop.com/Image/270000/278100/278132/products/1899126680.jpg?size=400x400",
+      mar: "+ $0.90 / 3% Cashback",
+    },
+    {
+      name: "Sabina Musayev Tango Maxi Skirt <br><br>",
+      logo: "Sold by Rue La La",
+      price: "95.99",
+      image:
+        "https://img.shop.com/Image/240000/248200/248295/products/1901697816.jpg?size=400x400",
+      mar: "+$1.92 / 2% Cashback",
+    },
+    {
+      name: "Silver Jeans Co. Women's High Note <br> Skinny Jeans>",
+      logo: "Sold by Macy's",
+      price: "64.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1902399538.jpg?size=400x400",
+      mar: " + $1.28 / 2% Cashback",
+    },
+
+    {
+      name: "BCBGMAXAZRIA Womens Metallic Faux Wrap <br> Mini Dress",
+      logo: "Sold by BHFO",
+      price: "90.99",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1880952488.jpg?size=400x400",
+      mar: "+ $1.82 / 2% Cashback",
+    },
+    {
+      name: "Womens Ruffle Skater Mini Bridesmaid <br> Dress - Pink - 8",
+      logo: "Sold by boohoo",
+      price: "22.40",
+      image:
+        "https://img.shop.com/Image/250000/252500/252590/products/1907205533.jpg?size=400x400",
+      mar: "+ $0.67 / 3% Cashback",
+    },
+    {
+      name: "24seven Comfort Apparel Knee Length A Line Elbow Sleeve Maternity Dress",
+      logo: "Sold by Macy's",
+      price: "32.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1851710104.jpg?size=400x400",
+      mar: "+$0.66 / 2% Cashback",
+    },
+    {
+      name: "YOUNIQUE Womens Ivory Floral Off Shoulder Knee <br> Length Shift Dress",
+      logo: "Sold by BOBBI + BRICKA",
+      price: "14.98",
+      image:
+        "https://img.shop.com/Image/270000/278100/278132/products/1893338825.jpg?size=400x400",
+      mar: " + $0.45 / 3% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

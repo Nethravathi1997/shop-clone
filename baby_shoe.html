@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script src="./components/header.js" type="module"></script>
+<script>
+  const items = [
+   {
+      name: "Carter's Toddler Girls Sarang Winter Boots, 7 Medium, Yellow",
+      logo: "Sold by JCPenney",
+      price: "28.49",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1871755207.jpg?size=400x400",
+      mar: "+$0.50 / 2% Cashback",
+    },
+    {
+      name: "Nina Ankle-Strap D'Orsay Shoes, Toddler Girls & Little Girls",
+      logo: "Sold by BHFO",
+      price: "49.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1628091938.jpg?size=400x400",
+      mar: "+ $1.02 / 3% Cashback",
+    },
+   {
+      name: "Puma Toddler Girls Rainbow Rift Slip-On Running Sneakers from Finish Line",
+      logo: "Sold by Macy's",
+      price: "40.93",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1890866850.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "Keds Toddler & Little Girls Kickstart Sneakers <br><br>",
+      logo: "Sold by Macy's",
+      price: "399.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1721152454.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Puma Toddler Boys Puma Softride Rift Slip-On Running Sneakers from Finish Line <br>",
+      logo: "Sold by Macy's",
+      price: "30.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1895116769.jpg?size=400x400",
+      mar: "+$0.70 / 2% Cashback",
+    },
+    {
+      name: "Merrell Toddler Boy Bare Steps Sandal <br><br><br>",
+      logo: "Sold by Macy's",
+      price: "40.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1841171758.jpg?size=400x400",
+      mar: "+ $0.80 / 2% Cashback",
+    },
+    {
+      name: "GUBARUN Boys Snow Boots Winter Waterproof Slip Resistant Cold Weather Shoes (Toddler/Little Kid/Big Kid)",
+      logo: "Sold by PairMySole",
+      price: "42.32",
+      image:
+        "https://img.shop.com/Image/260000/263300/263362/products/1891723907.jpg?size=400x400",
+      mar: "$2.60 / 2% Cashback",
+    },
+    {
+      name: "Reebok Weebok Clasp Low Toddler Boys Sneakers, 5 Medium, Blue <br><br>",
+      logo: "Sold by JCPenney",
+      price: "26.74",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1899128766.jpg?size=400x400",
+      mar: " + $0.70 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

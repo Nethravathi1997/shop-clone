@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <style>
+        #checkout{
+           display: grid;
+           grid-template-columns: repeat(1,95%); 
+        }
+        #one{
+            width: 120%;
+        }
+        #bill{
+            background-color: rgb(240,241,247);
+            height:600px;
+            width: 60%;
+            margin-top: 10%;
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div style="display:flex;" >
+        <div id="one">
+            <div id="checkout">
+                <h1>Your Cart</h1>
+            </div>
+            <div id="total"></div>
+        </div>
+        <div id="bill">
+          <h1>Order total</h1>
+          <br>
+          <hr>
+        </div>
+    </div>
+    
+    
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script>
+    let cart_data = JSON.parse(localStorage.getItem("cart"));
+
+
+let data_div = document.getElementById("checkout");
+
+var total = 0;
+console.log(total);
+ cart_data.forEach(function (product){
+     
+ let div = document.createElement("div");
+ div.style.marginTop = "60px";
+ div.style.height = "8cm";
+ div.style.boxShadow = "inset 0 0 5px grey";
+ div.style.marginLeft = "10px";
+ let J_name = document.createElement("h3");
+ J_name.innerHTML =product.name;
+ J_name.style.marginLeft = "220px";
+
+ let J_price = document.createElement("div");
+ J_price.innerHTML ="$" + product.price;
+ J_price.style.marginLeft = "220px";
+
+ let image = document.createElement("img");
+ image.src = product.image;
+ image.style.height = "280px";
+ image.style.width = "300px";
+ image.style.marginLeft = "2%"
+ image.style.marginTop = "1%"
+ image.style.float = "left";
+
+ let btn = document.createElement("button");
+ btn.innerHTML = "Remove product";
+ btn.style.margin = "10px";
+ btn.style.backgroundColor = "rgb(65,68,103)"
+ btn.style.color = "white";
+ btn.style.border = "none";
+ btn.style.height = "50px";
+ btn.onclick =function (){
+   remove(product);
+ }
+
+
+div.append(image, J_name, J_price,btn);
+
+data_div.append(div);
+total = total + Number(product.price);
+
+ });
+ let totall = document.getElementById("total");
+  totall.innerHTML = `Subtotal - $  ${total} `;
+  totall.style.fontSize = "30px";
+  totall.style.fontWeight = "500";
+console.log(total);
+
+function remove(p){
+  let car = document.getElementById("cart");
+  car.style.display = "block";
+  let cart_data = JSON.parse(localStorage.getItem("cart"));
+      cart_data.pop(p);
+      localStorage.setItem("cart",JSON.stringify(cart_data));
+
+}
+
+let pay = document.getElementById("bill");
+
+let h1 = document.createElement("h2");
+h1.innerHTML = `Subtotal is - $ ${total}`;
+h1.style.marginLeft = "400px";
+
+let a = document.createElement("a");
+a.innerHTML = "continue Shopping";
+a.href = "index.html";
+a.style.marginLeft = "500px";
+a.style.color = "black";
+a.style.fontSize ="18px";
+
+let btn1 = document.createElement("button");
+let a1 = document.createElement("a");
+a1.innerHTML = "Proceed to Checkout";
+a1.href = "checkout.html";
+a1.style.textDecoration = "none";
+ btn1.style.marginTop = "50px";
+ btn1.style.marginLeft = "450px";
+ btn1.style.backgroundColor = "rgb(65,68,103)"
+ a1.style.color = "white";
+ btn1.style.border = "none";
+ btn1.style.height = "50px";
+ a1.style.fontSize = "20px";
+
+ btn1.append(a1);
+
+ let d = document.createElement("div");
+ d.style.backgroundColor = "white";
+ d.style.marginTop = "50px";
+
+ let na = document.createElement("h4");
+ na.innerHTML = "Or checkout with:"
+
+ let img1 = document.createElement("img");
+ img1.src = "https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png"
+ img1.style.marginTop = "10px";
+ img1.style.marginLeft = "10px";
+
+ let img2 = document.createElement("img");
+ img2.src = "https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+ img2.style.marginLeft = "250px";
+
+ let img3 = document.createElement("img");
+ img3.src = "https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936";
+img3.style.marginLeft = "420px";
+img3.style.marginTop = "50px";
+d.append(na,img1,img2,img3);
+
+pay.append(h1,a,btn1,d);
+</script>

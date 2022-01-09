@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    <style>
+      #map {
+        width: 100%;
+      }
+      ::placeholder {
+        font-style: italic;
+        font-size: 25px;
+      }
+      #ipdiv {
+        background-color: rgb(32, 35, 64);
+      }
+      #ipdiv h3 {
+        color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 30px;
+      }
+      #ip {
+        display: flex;
+        width: 60%;
+        height: 120px;
+        margin-left: 20px;
+        margin-left: 18%;
+      }
+      input {
+        border-radius: 5px;
+        font-size: 22px;
+      }
+      #data {
+        text-align: center;
+      }
+      #data h2 {
+        font-size: 35px;
+      }
+      #data p {
+        font-size: 20px;
+      }
+      #locs{
+        display: flex;
+      }
+    </style>
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div>
+      <h1>SHOP LOCAL</h1>
+      <img
+        id="map"
+        src="https://img.shop.com/Image/resources/images/no-results-page@2x.jpg"
+        alt=""
+      />
+      <div id="ipdiv">
+        <div id="ip">
+          <h3>Find</h3>
+          <input type="text" placeholder="Sushi,Margerita,Mo's Diner" />
+          <h3>Near</h3>
+          <input type="text" placeholder="Zip Code or City, State" />
+        </div>
+      </div>
+
+      <div id="data">
+        <h2>Sorry, there are no results near</h2>
+        <p>Make sure Near contains a Zipcode or City, State.</p>
+        <p>Make sure all words are spelled correctly.</p>
+        <p>Try Different keywords.</p>
+        <p>Try more general keywords.</p>
+        <p>Or Try one of these top locations</p>
+      </div>
+
+      <div>
+        <h1>Top Offor Locations</h1>
+        
+          <img style="width: 100%;" src="./images/locs.PNG" alt="">
+        
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>

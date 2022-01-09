@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+   {
+      name: "Ray-Ban Sunglasses, RB2140 Original Wayfarer <br><br>",
+      logo: "Sold by Macy's",
+      price: "161.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1752273561.jpg?size=400x400",
+      mar: "+1.60 / 8% Cashback",
+    },
+    {
+      name: "Women's Large Grab Tote Bag <br><br>",
+      logo: "Sold by Macy's",
+      price: "298.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1898102289.jpg?size=400x400",
+      mar: "+$5.96 / 2% Cashback",
+    },
+   {
+      name: "Salvatore Ferragamo Studio Mini Leather Wallet On Chain",
+      logo: "Sold by GILT",
+      price: "799.00",
+      image:
+        "https://img.shop.com/Image/270000/278200/278200/products/1877565150.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "Lifestride Women's Sanya Lux Navy/Vegmicron/Gore M",
+      logo: "Sold by Soled",
+      price: "103.80",
+      image:
+        "https://img.shop.com/Image/260000/267800/267870/products/1890470160.jpg?size=400x400",
+      mar: "+ $6.23 / 6% Cashback",
+    },
+   
+    {
+      name: "Pistil Women's Sahara Straw Sun Hat <br><br>",
+      logo: "Sold by Macy's",
+      price: "57.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1887508244.jpg?size=400x400",
+      mar: "+$1.14 / 2% Cashback",
+    },
+    {
+      name: "Avalanche Adult Taupe Coral Outdoor Lace Up Hiking Sneakers 6-10 Womens",
+      logo: "Sold by Sophia's Style",
+      price: "29.23",
+      image:
+        "https://img.shop.com/Image/260000/263300/263359/products/1869578790.jpg?size=400x400",
+      mar: "+$0.58 / 2% Cashback",
+    },
+    {
+      name: "Maui Jim Koko Head Polarized Sunglasses,<br><br>",
+      logo: "Sold by Macy's",
+      price: "249.99 ",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1769084696.jpg?size=400x400",
+      mar: "$5.00 / 2% Cashback",
+    },
+    {
+      name: "Georgia Boot Carbo-Tec LT Women's Steel Toe Waterproof Pull-On Work Boot",
+      logo: "Sold by Lehigh Outfitters",
+      price: "75.74",
+      image:
+        "https://img.shop.com/Image/270000/279100/279185/products/1861196759.jpg?size=400x400",
+      mar: " + $4.54 / 6% Cashbac",
+    },
+
+   {
+      name: "Yuzefi Baton Leather Shoulder Bag <br><br>",
+      logo: "Sold by GILT",
+      price: "459.99",
+      image:
+        "https://img.shop.com/Image/270000/278200/278200/products/1909625595.jpg?size=400x400",
+      mar: "+ $9.20 / 2% Cashback",
+    },
+    {
+      name: "Scala Women's Big Brim Cotton Sun Hat In Pink",
+      logo: "Sold by Bed Bath & Beyond",
+      price: "32.99",
+      image:
+        "https://img.shop.com/Image/240000/243500/243545/products/1912524150.jpg?size=400x400",
+      mar: "+ $0.66 / 2% Cashback",
+    },
+    {
+      name: "Chloe Alphabet Leather Trifold Wallet",
+      logo: "Sold by Rue La La",
+      price: "359.99",
+      image:
+        "https://img.shop.com/Image/240000/248200/248295/products/1904835911.jpg?size=400x400",
+      mar: "+$7.20 / 2% Cashback",
+    },
+   {
+      name: "Calvin Klein Shelly Crossbody",
+      logo: "Sold by Macy's",
+      price: "138.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1892394966.jpg?size=400x400",
+      mar: " + $2.76 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

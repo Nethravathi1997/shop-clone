@@ -1,0 +1,124 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#clothes{
+    display: flex;
+}
+#left{
+    width: 14%;
+    border-right: 0.5px solid rgb(168, 168, 168);
+    margin-right: 1%;
+}
+#left h3{
+    font-size: 20px;
+}
+#left p{
+    font-size: 18px;
+    color: gray;
+}
+#right{
+    width: 90%;
+}
+
+#wom{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-gap: 1%;
+}
+
+
+.clothdiv1 img{
+    width: 100%;
+    margin-top: 20px;
+}
+#batte{
+    display: flex;
+}
+#batte h3{
+    text-align: center;
+}
+#batte a{
+    margin-left: 45%;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+#batte a:hover{
+    color: rgb(3, 196, 235);
+    cursor: pointer;
+}
+#batte div{
+    width: 100%;
+}
+#batte img{
+    margin-left: 10%;
+}
+#brands{
+    margin-top: 2cm;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(2,5cm);
+   
+    grid-gap: 2px;
+}
+#brands div{
+    box-shadow: inset 0 0 5px grey;
+}
+#brands div img{
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+.container1{
+    display: flex;
+    background-color: white;
+}
+.container1 div{
+    width: 25%;
+    box-shadow: inset 0 0 5px grey;
+    background-color: rgb(240,241,247);
+}
+.container1 div img{
+    width: 60%;
+    margin-top: 1.5%;
+    margin-left: 20%;
+}
+.container1 div h3,.container1 div h4,.container1 div p{
+    margin-left: 5%;
+}
+#head{
+    font-size: 50px;
+    margin: 5px;
+    margin-top: 3%;
+}
+#left h1{
+    color:rgb(3, 196, 235); 
+    font-size: 40px;
+}
+#women div{
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.1);
+}
+#women div:hover{
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.5);
+}
+#men div:hover{
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.5);
+}
+#women div img{
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+}
+#men div img{
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+}
+#men div{
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.1);
+}
+#men a,#women a{
+    margin-top: 0%;
+    font-size: 20px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div  id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script src="./components/header.js" type="module"></script>
+<script>
+  const items = [
+   {
+      name: "Tretorn Women's Rawlins 10 in Black <br><br>",
+      logo: "Sold by JCPenney",
+      price: "128.49",
+      image:
+        "https://img.shop.com/Image/260000/267800/267870/products/1850236383.jpg?size=400x400",
+      mar: "+$0.50 / 2% Cashback",
+    },
+    {
+      name: "Cougar Women's Vienna-S In Black <br><br><br>",
+      logo: "Sold by Soled",
+      price: "185.80",
+      image:
+        "https://img.shop.com/Image/260000/267800/267870/products/1886108809.jpg?size=400x400",
+      mar: "+ $1.02 / 3% Cashback",
+    },
+   {
+      name: "Adidas Mens Game Spec Fitness Athletic Tennis Shoes",
+      logo: "Sold by BHFO",
+      price: "40.93",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1891254372.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "Vans Era Platform Plain Checkerboard Black/True White VN0A3WLUVYD1 Men's",
+      logo: "Sold by KixRx",
+      price: "44.00",
+      image:
+        "https://img.shop.com/Image/280000/282100/282141/products/1880069582.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Puma Girls Heart Bling Faux Leather Sequined Fashion Sneakers",
+      logo: "Sold by BHFO",
+      price: "22.99",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1877515387.jpg?size=400x400",
+      mar: "+$0.70 / 2% Cashback",
+    },
+    {
+      name: "Skechers Forever Hearts Little Kid/Big Kid Girls Sneakers, 12 Medium, Black",
+      logo: "Sold by JCPenney",
+      price: "46.70",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1899443612.jpg?size=400x400",
+      mar: "+ $0.80 / 2% Cashback",
+    },
+    {
+      name: "Heelys Big Boys Pro 20 Wheeled Skate Casual Sneakers from Finish Line",
+      logo: "Sold by PairMySole",
+      price: "35.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1879347601.jpg?size=400x400",
+      mar: "$2.60 / 2% Cashback",
+    },
+    {
+      name: "Carter's Little Boys Damon Casual Sneakers <br><br>",
+      logo: "Sold by JCPenney",
+      price: "26.74",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1909265291.jpg?size=400x400",
+      mar: " + $0.70 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+   {
+      name: "Vionic Womens Suede Slip On Moccasins <br><br>",
+      logo: "Sold by BHFO",
+      price: "51.97",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1908809149.jpg?size=400x400",
+      mar: "+$0.50 / 2% Cashback",
+    },
+    {
+      name: "Vionic Womens Bianca Suede Ankle Strap Block Heels",
+      logo: "Sold by BHFO",
+      price: "81.99",
+      image:
+        "https://img.shop.com/Image/270000/273200/273200/products/1902714935.jpg?size=400x400",
+      mar: "+ $1.02 / 3% Cashback",
+    },
+   {
+      name: "Dolce Vita Saydee Scuff Slipper Flats Women's <br> Shoes",
+      logo: "Sold by Macy's",
+      price: "29.93",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1880868826.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "L'Artiste Women's Muggiasti Oxfords Women's Shoes",
+      logo: "Sold by Macy's",
+      price: "199.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1863186916.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Madden Girl Daze Lug-Sole Sandals <br><br>",
+      logo: "Sold by Macy's",
+      price: "59.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1902894153.jpg?size=400x400",
+      mar: "+$0.70 / 2% Cashback",
+    },
+    {
+      name: "Madden Girl Harperr Two-Piece City Sandals <br><br>",
+      logo: "Sold by Macy's",
+      price: "59.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1758044849.jpg?size=400x400",
+      mar: "+ $0.80 / 2% Cashback",
+    },
+    {
+      name: "The Children's Place Unisex-Child Ballet Flat <br><br>",
+      logo: "Sold by PairMySole",
+      price: "24.32",
+      image:
+        "https://img.shop.com/Image/260000/263300/263362/products/1892892628.jpg?size=400x400",
+      mar: "$2.60 / 2% Cashback",
+    },
+    {
+      name: "Christie & Jill Little Kids/Big Kids Girls Heaven Mary Jane Shoes, 4 Medium, White",
+      logo: "Sold by JCPenney",
+      price: "18.74",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1848013303.jpg?size=400x400",
+      mar: " + $0.54 / 6% Cashback",
+    },
+
+   {
+      name: "Marc Joseph New York Children Shoes Broadway Leather",
+      logo: "Sold by PairMySole",
+      price: "65.12",
+      image:
+        "https://img.shop.com/Image/260000/263300/263362/products/1865993349.jpg?size=400x400",
+      mar: "+ $2.90 / 2% Cashback",
+    },
+    {
+      name: "Merrell Girls' or Little Girls' or Toddler Girls' Jungle Moc Shoes",
+      logo: "Sold by Macy's",
+      price: "60.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1407222106.jpg?size=400x400",
+      mar: "+ $0.90 / 2% Cashback",
+    },
+    {
+      name: "Swea Pea & Lilli Girls Ivory PU Rhinestone Bella Shoes 2 Kids",
+      logo: "Sold by Sophia's Style",
+      price: "35.65",
+      image:
+        "https://img.shop.com/Image/260000/263300/263359/products/1634776853.jpg?size=400x400",
+      mar: "+ $0.70 / 2% Cashback",
+    },
+   {
+      name: "Bettye Muller Concept Unisex-Child Genny Pump",
+      logo: "Sold by PairMySole",
+      price: "41.99",
+      image:
+        "https://img.shop.com/Image/260000/263300/263362/products/1890528052.jpg?size=400x400",
+      mar: " + $0.80 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

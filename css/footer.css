@@ -1,0 +1,55 @@
+#onediv{
+    background-color: rgb(84,88,113);
+    height: 2cm;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 0.5px solid rgb(219, 219, 219);
+    margin-top: 50px;
+}
+#onediv h3{
+    color: white;
+}
+#onediv input{
+    width: 500px;
+    margin-top: 1%;
+    height: 0.95cm;
+}
+#onediv button{
+    height: 1.1cm;
+}
+#onediv button:hover{
+    background-color: #333;
+    color: white;
+}
+#onediv p{
+    color: white;
+    font-size: 18px;
+    margin-top: 1%;
+}
+#twodiv{
+    display: flex;
+    background-color: rgb(84,88,113);
+}
+#twodiv h3{
+    border-right: 0.5px solid rgb(219, 219, 219) ;
+    color: white;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
+#thrdiv{
+    background-color: rgb(240,241,247);
+    color: gray;
+    border: 20px solid rgb(240,241,247); 
+    line-height: 5px;
+}
+#fourdiv{
+    display: flex;
+    background-color: rgb(240,241,247);
+    border: 20px solid rgb(240,241,247);
+
+}
+#fourdiv img{
+    height: 100px;
+    width: 120px;
+    margin-left: 10px;
+}

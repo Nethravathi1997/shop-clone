@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+    
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+   {
+      name: "Alfani Men's Haydan Patent Slip-On Loafers, Created for Macy's Men's Shoes",
+      logo: "Sold by BHFO",
+      price: "51.97",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1885719600.jpg?size=400x400",
+      mar: "+$0.50 / 2% Cashback",
+    },
+    {
+      name: "Nike Kepa Kai Men's Sandals, Size: 10, Grey <br><br>",
+      logo: "Sold by BHFO",
+      price: "24.99",
+      image:
+        "https://img.shop.com/Image/260000/268500/268595/products/1896966098.jpg?size=400x400",
+      mar: "+ $1.02 / 3% Cashback",
+    },
+   {
+      name: "Stacy Adams Garrison Mens Wingtip Oxfords, 13 Wide, Brown",
+      logo: "Sold by Macy's",
+      price: "69.93",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1847628377.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "L'Artiste Men's Muggiasti Oxfords Men's Shoes <br><br>",
+      logo: "Sold by Macy's",
+      price: "399.00",
+      image:
+        "https://img.shop.com/Image/250000/251800/251872/products/1883554466.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Madden Boy's Daze Lug-Sole Sandals <br><br>",
+      logo: "Sold by Macy's",
+      price: "89.99",
+      image:
+        "https://img.shop.com/Image/270000/278200/278200/products/1901060897.jpg?size=400x400",
+      mar: "+$0.70 / 2% Cashback",
+    },
+    {
+      name: "Naturino Leather Sandal <br><br>",
+      logo: "Sold by Macy's",
+      price: "78.00",
+      image:
+        "https://img.shop.com/Image/240000/248200/248295/products/1890468105.jpg?size=400x400",
+      mar: "+ $0.80 / 2% Cashback",
+    },
+    {
+      name: "Timberland Flip Flop Blue 62975 Kid's <br><br>",
+      logo: "Sold by PairMySole",
+      price: "14.32",
+      image:
+        "https://img.shop.com/Image/280000/282100/282141/products/1880069547.jpg?size=400x400",
+      mar: "$2.60 / 2% Cashback",
+    },
+    {
+      name: "Nike Big Boys Kawa Slide Sandals from Finish Line <br><br>",
+      logo: "Sold by JCPenney",
+      price: "26.74",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1898510035.jpg?size=400x400",
+      mar: " + $0.54 / 6% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

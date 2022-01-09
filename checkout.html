@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/clothes.css" />
+    <link rel="stylesheet" href="css/sign_in.css">
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+    <body>
+        <div id="sidebar"></div>
+        <div id="navbar"></div>
+        <div>
+            <img style="width: 100%;" src="./images/newh.PNG" alt="">
+        </div>
+
+        <div id="form" style="margin-top: -25px; display:block;">
+            <div id="Register">
+              <h1>Shipping Address Form</h1>
+              <p style="color: gray;">* Indicates Required field</p>
+              <form onsubmit="Register(event)" id="reg-form">
+                <div style="display: flex;">
+                   <div>
+                    <p>First Name*</p> 
+                    <input type="text" id="inp1" placeholder="First Name Here" />
+                    <p id="e"></p>
+                   </div> 
+                   <div style="margin-left: 100px;margin-top: -14px;">
+                    <p style="margin-bottom: 0px;">Last Name*</p> <br>
+                    <input type="text" id="inp11" placeholder="Last Name Here" />
+                    <p id="e1"></p>
+                </div> 
+                </div>
+
+                <div style="display: flex;">
+                    <div>
+                     <p>Address 1*</p> 
+                     <input type="text" id="inp2" placeholder="Please enter streat address here" />
+                     <p id="e2"></p>
+                    </div> 
+                    <div style="margin-left: 100px;margin-top: -14px;">
+                     <p style="margin-bottom: 0px;">Address 2</p> <br>
+                     <input type="text" id="inp22" />
+                     
+                 </div> 
+                     
+                </div>
+
+                <div style="display: flex;">
+                    <div>
+                     <p>City *</p> 
+                     <input type="text" id="inp3" placeholder="Please enter streat address here" />
+                     <p id="e3"></p>
+                    </div> 
+                    <div style="margin-left: 100px;margin-top: -14px;">
+                     <p style="margin-bottom: 0px;">State/Provinance *</p> <br>
+                     <input type="text" id="inp33" />
+                     <p id="e4"></p>
+                 </div> 
+                     
+                </div>
+                
+                <p>Zip/Postal*</p>
+                <input type="text" id="inp4" placeholder="Zip code"/>
+                <p id="e5"></p>
+                
+                <div style="display: flex;">
+                    
+                <input type="checkbox" style="margin: 0px;margin-right: 5px; height: 20px;width: 20px;">
+                <p style="margin-top: -2px;margin-right: 5px;">This address is a PO Box</p>
+
+                </div>
+                
+                <p>Phone*</p>
+                <input type="text" id="inp44" placeholder="Please enter your 10 digit phone number "/> <br>
+                <p id="e6"></p>
+                
+                <button id="Saveee" onclick="savee()">Continue Checkout</button>
+          </div>
+        </div>
+          <div id="final" style="display: none;">
+                <h1>Order Placed Successfully</h1>
+                <h2 id="date"></h2>
+
+                <h2>Pay During Delivery Via cash or card <br> <img style="height: 150px; width: 150px;margin-top: 20px;border-radius: 50%;"
+                     src="https://previews.123rf.com/images/magurok/magurok1506/magurok150600099/41668901-hand-with-credit-card-and-hand-with-cash.jpg" 
+                     alt=""></h2>
+                <img src="https://dealsnaijashop.com/wp-content/uploads/2020/09/icon_confirmation-1.gif" alt=""> <br>
+
+                <a href="index.html">Continue Shopping</a>
+        </div>
+        <div id="footer"></div>
+  </body>
+</html>
+
+<script src="./components/checkout.js"></script>

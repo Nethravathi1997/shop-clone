@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/clothes.css" />
+    <link rel="stylesheet" href="css/sign_in.css">
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+    <body>
+        <div id="sidebar"></div>
+        <div id="navbar"></div>
+
+        <div id="form">
+            <div id="Register" style="display: none;">
+              <h1>Create an account</h1>
+              <p style="color: gray;">* Indicates Required field</p>
+              <form onsubmit="Register(event)" id="reg-form">
+                <div style="display: flex;">
+                   <div>
+                    <p>First Name*</p> 
+                    <input type="text" id="inp1" placeholder="First Name Here" />
+                    <p id="e"></p>
+                   </div> 
+                   <div style="margin-left: 100px;margin-top: -14px;">
+                    <p style="margin-bottom: 0px;">Last Name*</p> <br>
+                    <input type="text" id="inp11" placeholder="Last Name Here" />
+                    <p id="e1"></p>
+                </div> 
+                     
+                </div>
+                
+                <p>Email_address*</p>
+                <input type="text" id="inp2" placeholder="yourname@example.com"/>
+                <p id="e2"></p>
+                <div style="display: flex;">
+                    <div>
+                        <p>Password*</p>
+                    <input type="password" id="inp3" placeholder="Please enter a minimum of 7 characters"/>
+                    <p id="e3"></p>
+
+                    </div>
+                    <div style="margin-left: 100px;margin-top: 0px;">
+                        <p>Confirm Password*</p>
+                    <input type="password" id="inp33" placeholder="Please enter a minimum of 7 characters"/>
+                    <p id="e33"></p>
+                    </div>
+                    
+                </div>
+
+                <h2>Text Message (SMS) Alerts: (Optional)</h2>
+                <div style="display: flex;">
+                    
+                <input type="checkbox" style="margin: 0px;">
+                <p style="margin-left: -180px;">Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.</p>
+
+                </div>
+                
+                <p>Mobile Phone*</p>
+                <input type="text" id="inp4" placeholder="Please enter your 10 digit phone number "/> <br>
+                <p id="e4"></p>
+                
+                
+                <button id="subbu" onclick="regi()">Create your New Account</button>
+              </form>
+            </div>
+      
+            <div id="main">
+                <div id="Login"  style="display: block;">
+                    <h1>Sign in</h1>
+                    <form onsubmit="Login(event)" id="login-form">
+                      <p>Email address:</p> 
+                      <input type="text" id="inp7" placeholder="Yourname@example.com" /> 
+                      <p id="err"></p>
+                      <p>Password:</p> 
+                      <input type="password" id="inp8" placeholder="Please Enter Your Password"/>
+                      <p id="err1"></p>
+      
+                      <a href="">Forgot your password?</a>
+      
+                      <h3 id="red">Also, please confirm you are not a robot:</h3>
+      
+                      <div id="robot">
+                          <input id="che" type="checkbox">
+                          <p>I'm not a Robot</p>
+                          <img id="cap" src="https://t3.ftcdn.net/jpg/03/74/83/28/360_F_374832817_o1XM5iP8cKloqbNCMAQZjC2wijiNxcec.jpg" alt="">
+                      </div>
+                      <p id="err2"></p>
+                      <button id="sub" onclick="proceed()">Sign in</button>
+                  
+                    </form>
+                  </div>
+
+                  <div id="right" style="display: block;">
+                      <h1>Don't have an account?</h1>
+                      <p>With a SHOP.COM account, you can enjoy the <br>following benefits: up to 50% Cashback on eligible <br>
+                        purchases, redeem discount coupons, order status <br>and history, saved payment options and addresses,<br>
+                        exclusive emails and more.</p>
+                        <button id="regi">Create your new account</button>
+                  </div>
+
+            </div>
+
+          </div>
+        <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/sign_in.js"></script>

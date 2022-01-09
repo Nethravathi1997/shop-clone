@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+   {
+      name: "Perry Ellis Portfolio Men's Leather Michigan Slim Ombre Trifold Wallet",
+      logo: "Sold by Macy's",
+      price: "17.50",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1623982638.jpg?size=400x400",
+      mar: "+$0.35 / 2% Cashback",
+    },
+    {
+      name: "Dickies Rubberized Mens Slim Fold Wallet, One Size , Black",
+      logo: "Sold by JCPenney",
+      price: "20.24",
+      image:
+        "https://img.shop.com/Image/270000/274900/274929/products/1908689414.jpg?size=400x400",
+      mar: "+ $0.40 / 2% Cashback",
+    },
+   {
+      name: "Timberland 40mm Logo Cut-To-Fit Belt <br><br>",
+      logo: "Sold by Macy's",
+      price: "30.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1782403183.jpg?size=400x400",
+      mar: "+ $0.60 / 2% Cashback",
+    },
+    {
+      name: "CTM Deer Hunting Belt Buckle <br><br>",
+      logo: "Sold by Belt Outlet",
+      price: "6.00",
+      image:
+        "https://img.shop.com/Image/280000/280600/280604/products/1822270129.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Georgia Boot Small Batch Casual Boot <br><br>",
+      logo: "Sold by Lehigh Outfitters",
+      price: "34.99",
+      image:
+        "https://img.shop.com/Image/270000/279100/279185/products/1890336639.jpg?size=400x400",
+      mar: "+ $10.20 / 6% Cashback",
+    },
+    {
+      name: "Reebok Astroride Work Men's Steel Toe Electrical Hazard Athletic Work Shoe",
+      logo: "Sold by Lehigh Outfitters",
+      price: "49.38",
+      image:
+        "https://img.shop.com/Image/270000/279100/279185/products/1891728086.jpg?size=400x400",
+      mar: "+ $2.96 / 6% Cashback",
+    },
+    {
+      name: "Arnette Men's Sunglasses <br><br>",
+      logo: "Sold by Macy's",
+      price: "72.80 ",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1792342953.jpg?size=400x400",
+      mar: "+ $1.46 / 2% Cashback",
+    },
+    {
+      name: "Ray-Ban Unisex RB3025 58mm Sunglasses <br><br>",
+      logo: "Sold by Rue La La",
+      price: "6.25",
+      image:
+        "https://img.shop.com/Image/240000/248200/248295/products/1893652031.jpg?size=400x400",
+      mar: " +$2.40 / 2% Cashback",
+    },
+
+   {
+      name: "Scala Men's Large Porkpie Wool Felt Hat In Black <br><br>",
+      logo: "Sold by Bed Bath & Beyond",
+      price: "60.99",
+      image:
+        "https://img.shop.com/Image/240000/243500/243545/products/1910737079.jpg?size=400x400",
+      mar: "+$1.22 / 2% Cashback",
+    },
+    {
+      name: "U S MILITARY MERCHANDISE CP00312 CAP USMC MARINES CAMO",
+      logo: "Sold by Macy's",
+      price: "17.20",
+      image:
+        "https://img.shop.com/Image/260000/260100/260166/products/1877310279.jpg?size=400x400",
+      mar: "+ $0.34 / 2% Cashback",
+    },
+    {
+      name: "Disney Mickey Mouse Plaid Men's Tie <br><br>",
+      logo: "Sold by Macy's",
+      price: "58.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1874919142.jpg?size=400x400",
+      mar: "+ $1.16 / 2% Cashback",
+    },
+   {
+      name: "Kenneth Cole Mens Plaid Pre-tied Neck Tie <br><br>",
+      logo: "Sold by Tags Weekly",
+      price: "40.01",
+      image:
+        "https://img.shop.com/Image/250000/253200/253251/products/1858323411.jpg?size=400x400",
+      mar: " + $0.80 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>

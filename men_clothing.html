@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/data_design.css" />
+
+    <title>SHOP.COM - Online shopping marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="total"></div>
+      <i
+        id="close"
+        class="fa fa-times-circle"
+        style="font-size: 48px; float: right; margin: 20px"
+      ></i>
+      <div id="data"></div>
+      <button id="check"><a href="payments.html">Checkout</a> </button>
+    </div>
+    <div id="sidebar"></div>
+    <div id="navbar"></div>
+    <div id="women"></div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./components/common.js" type="module"></script>
+<script src="./components/cart.js"></script>
+<script src="./components/data_design.js"></script>
+<script>
+  const items = [
+   {
+      name: "Grunt Style 1776 Flag Long Sleeve T-Shirt <br><br>",
+      logo: "Sold by Forza Sports",
+      price: "24.95",
+      image:
+        "https://img.shop.com/Image/240000/249300/249385/products/1833432104.jpg?size=400x400",
+      mar: "+$0.50 / 2% Cashback",
+    },
+    {
+      name: "NORTH FACE Mens Blue Windowpane Plaid Collared Classic Fit Cotton Dress Shirt",
+      logo: "Sold by BOBBI + BRICKA",
+      price: "33.98",
+      image:
+        "https://img.shop.com/Image/270000/278100/278132/products/1895449874.jpg?size=400x400",
+      mar: "+ $1.02 / 3% Cashback",
+    },
+   {
+      name: "Nautica Mens Striped Pullover Sweater <br><br>",
+      logo: "Sold by Tags Weekly",
+      price: "47.56",
+      image:
+        "https://img.shop.com/Image/250000/253200/253251/products/1825249069.jpg?size=400x400",
+      mar: "+ $0.50 / 2% Cashback",
+    },
+    {
+      name: "Levi's Men's 405 Standard Jean Shorts <br><br>",
+      logo: "Sold by Macy's",
+      price: "26.99",
+      image:
+        "https://img.shop.com/Image/260000/268500/268595/products/1842321956.jpg?size=400x400",
+      mar: "+  $0.54 / 2% Cashback",
+    },
+   
+    {
+      name: "Kenneth Cole Reaction Men's Slim-Fit Stretch Dress Pants, Created for Macy's",
+      logo: "Sold by Macy's",
+      price: "34.99",
+      image:
+        "https://www.shop.com/feo-cdn/e/a/6rONWyaGM.webp",
+      mar: "+$0.70 / 2% Cashback",
+    },
+    {
+      name: "Levi's Men's 569 Loose Straight Fit <br> Jeans",
+      logo: "Sold by Macy's",
+      price: "39.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1468233320.jpg?size=400x400",
+      mar: "+ $0.80 / 2% Cashback",
+    },
+    {
+      name: "Men's Heathered Purple, Black Tcu Horned Frogs Audible Windshirt Quarter-Zip Pullover Jacket",
+      logo: "Sold by Macy's",
+      price: "99.99 ",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1905105539.jpg?size=400x400",
+      mar: "$2.60 / 2% Cashback",
+    },
+    {
+      name: "Men's Tek Gear DryTek Polo, Size: Small, <br> Med Green",
+      logo: "Sold by Kohl's",
+      price: "6.25",
+      image:
+        "https://img.shop.com/Image/260000/268500/268595/products/1841764334.jpg?size=400x400",
+      mar: " + $4.54 / 6% Cashback",
+    },
+
+   {
+      name: "Champion Men's Powerblend Fleece Logo <br> Sweatshirt",
+      logo: "Sold by Macy's",
+      price: "45.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1724999457.jpg?size=400x400",
+      mar: "+ $0.90 / 2% Cashback",
+    },
+    {
+      name: "Men's Charcoal Air Force Falcons Rangers Quarter-Zip Pullover Wind Shirt",
+      logo: "Sold by Macy's",
+      price: "44.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1905105837.jpg?size=400x400",
+      mar: "+ $0.90 / 2% Cashback",
+    },
+    {
+      name: "Under Armour Men's Unstoppable Wordmark T-Shirt",
+      logo: "Sold by Macy's",
+      price: "350.00",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1787900891.jpg?size=400x400",
+      mar: "+ $0.70 / 2% Cashback",
+    },
+   {
+      name: "Men's Maroon Texas A M Aggies Bart Windshirt Quarter-Zip Pullover Jacket",
+      logo: "Sold by Macy's",
+      price: "39.99",
+      image:
+        "https://img.shop.com/Image/240000/243400/243406/products/1905101672.jpg?size=400x400",
+      mar: " + $0.80 / 2% Cashback",
+    },
+  ];
+
+  const items_json = JSON.stringify(items);
+  localStorage.setItem("MyItems", items_json);
+</script>
