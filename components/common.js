@@ -1,4 +1,6 @@
-
+import sidebar from "./sidebar.js";
+let side = document.getElementById("sidebar");
+side.innerHTML = sidebar();
 
 import navbar from "./navbar.js";
 let nav = document.getElementById("navbar");
