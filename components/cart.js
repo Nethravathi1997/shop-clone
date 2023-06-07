@@ -17,6 +17,13 @@ var total = 0;
 console.log(total);
    cart_data.forEach(function (product){
        
+        let div = document.createElement("div");
+   div.style.marginTop = "60px";
+   div.style.boxShadow = "inset 0 0 5px grey";
+   div.style.marginLeft = "10px";
+   let J_name = document.createElement("h3");
+   J_name.innerHTML =product.name;
+   J_name.style.marginLeft = "220px";
   
 
    let J_price = document.createElement("div");
