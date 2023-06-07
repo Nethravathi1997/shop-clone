@@ -1,5 +1,5 @@
-
-
+let date = document.getElementById("date");
+date.innerHTML= "Get your Order By" + " <br><br>"+  new Date(0,0,0,0,0,0,Date.now() + 5 * 24 * 60 * 60 * 1000);
   //Registration form validation
 
   function savee(){
