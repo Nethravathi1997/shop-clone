@@ -2,13 +2,7 @@ let date = document.getElementById("date");
 date.innerHTML= "Get your Order By" + " <br><br>"+  new Date(0,0,0,0,0,0,Date.now() + 5 * 24 * 60 * 60 * 1000);
   //Registration form validation
 
-  function savee(){
-    returnval = true;
-    let fname = document.getElementById("inp1").value;
-if(fname.length == 0 ||fname.length < 2){
-    document.getElementById("e").innerHTML = "Firstname Should have Min 3 letters";
-    returnval = false;
-}
+ 
     let lname = document.getElementById("inp11").value;
     if(lname.length == 0){
         document.getElementById("e1").innerHTML = "Lastname Cannot be empty";
