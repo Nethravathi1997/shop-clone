@@ -9,8 +9,6 @@ let new_data = document.getElementById("cart");
   }
 
   let cart_data = JSON.parse(localStorage.getItem("cart"));
-
-
   let data_div = document.getElementById("data");
 
 var total = 0;
